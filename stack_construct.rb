@@ -1,5 +1,4 @@
 require 'json'
-require 'pry'
 
 def parse_stack_line(stack_line)
     "".concat("  at ")
