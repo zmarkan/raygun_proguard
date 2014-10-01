@@ -41,6 +41,11 @@ end
 input_file = ARGV[0]
 output_file = ARGV[1]
 
+if(input_file == nil || output_file == nil )
+    puts "Usage: ruby stack_construct.rb [INPUT_JSON_FILE] [OUTPUT_FILE]"
+    exit
+end
+
 json_file = JSON.parse( IO.read( input_file ))
 
 error =  json_file["error"]
