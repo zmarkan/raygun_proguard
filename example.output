@@ -1,0 +1,19 @@
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.marksandspencer.app/com.usablenet.android.ms.myoffers.MyOffersActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object dagger.ObjectGraph.inject(java.lang.Object)' on a null object reference
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2255)
+    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2317)
+    at android.app.ActivityThread.access$800(ActivityThread.java:143)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1258)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:135)
+    at android.app.ActivityThread.main(ActivityThread.java:5070)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:836)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:631)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object dagger.ObjectGraph.inject(java.lang.Object)' on a null object reference
+    at com.usablenet.android.ms.MSApplication.a(SourceFile:142)
+    at com.usablenet.android.ms.myoffers.MyOffersActivity.onCreate(SourceFile:83)
+    at android.app.Activity.performCreate(Activity.java:5720)
+    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1102)
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2208)
+    ... 10 more
